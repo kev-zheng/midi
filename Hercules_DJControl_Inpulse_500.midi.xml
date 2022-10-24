@@ -712,7 +712,7 @@
 							  
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_1_backward</key>
+				<key>beatjump_1_forward</key>
 				<description>PAD 1</description>
 				<status>0x96</status>
 				<midino>0x20</midino>
@@ -722,7 +722,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_1_forward</key>
+				<key>beatjump_2_forward</key>
 				<description>PAD 2</description>
 				<status>0x96</status>
 				<midino>0x21</midino>
@@ -732,7 +732,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_2_backward</key>
+				<key>beatjump_4_forward</key>
 				<description>PAD 3</description>
 				<status>0x96</status>
 				<midino>0x22</midino>
@@ -742,7 +742,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_2_forward</key>
+				<key>beatjump_8_forward</key>
 				<description>PAD 4</description>
 				<status>0x96</status>
 				<midino>0x23</midino>
@@ -752,7 +752,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_4_backward</key>
+				<key>beatjump_1_backward</key>
 				<description>PAD 5</description>
 				<status>0x96</status>
 				<midino>0x24</midino>
@@ -762,7 +762,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_4_forward</key>
+				<key>beatjump_2_backward</key>
 				<description>PAD 6</description>
 				<status>0x96</status>
 				<midino>0x25</midino>
@@ -772,7 +772,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_8_backward</key>
+				<key>beatjump_4_backward</key>
 				<description>PAD 7</description>
 				<status>0x96</status>
 				<midino>0x26</midino>
@@ -782,7 +782,7 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>beatjump_8_forward</key>
+				<key>beatjump_8_backward</key>
 				<description>PAD 8</description>
 				<status>0x96</status>
 				<midino>0x27</midino>
@@ -1127,7 +1127,7 @@
 							  
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_1_backward</key>
+				<key>beatjump_1_forward</key>
 				<description>PAD 1</description>
 				<status>0x97</status>
 				<midino>0x20</midino>
@@ -1137,7 +1137,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_1_forward</key>
+				<key>beatjump_2_forward</key>
 				<description>PAD 2</description>
 				<status>0x97</status>
 				<midino>0x21</midino>
@@ -1147,7 +1147,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_2_backward</key>
+				<key>beatjump_4_forward</key>
 				<description>PAD 3</description>
 				<status>0x97</status>
 				<midino>0x22</midino>
@@ -1157,7 +1157,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_2_forward</key>
+				<key>beatjump_8_forward</key>
 				<description>PAD 4</description>
 				<status>0x97</status>
 				<midino>0x23</midino>
@@ -1167,7 +1167,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_4_backward</key>
+				<key>beatjump_1_backward</key>
 				<description>PAD 5</description>
 				<status>0x97</status>
 				<midino>0x24</midino>
@@ -1177,7 +1177,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_4_forward</key>
+				<key>beatjump_2_backward</key>
 				<description>PAD 6</description>
 				<status>0x97</status>
 				<midino>0x25</midino>
@@ -1187,7 +1187,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_8_backward</key>
+				<key>beatjump_4_backward</key>
 				<description>PAD 7</description>
 				<status>0x97</status>
 				<midino>0x26</midino>
@@ -1197,7 +1197,7 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>beatjump_8_forward</key>
+				<key>beatjump_8_backward</key>
 				<description>PAD 8</description>
 				<status>0x97</status>
 				<midino>0x27</midino>
@@ -2409,64 +2409,15 @@
 				<minimum>0.5</minimum>
 			</output>
 			<!--LED BEATJUMP-->
-			<output>
-				<group>[Channel1]</group>
-				<key>beatjump_1_backward</key>
-				<description>(Beatjump 1 backward DECK A)</description>
-				<status>0x96</status>
-				<midino>0x20</midino>
-				<on>0x0F</on>
-				<off>0x07</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel2]</group>
-				<key>beatjump_1_backward</key>
-				<description>(Beatjump 1 backward DECK B)</description>
-				<status>0x97</status>
-				<midino>0x20</midino>
-				<on>0x0F</on>
-				<off>0x07</off>
-				<minimum>0.5</minimum>
-			</output>
+			<!--Channel 1-->
 			<output>
 				<group>[Channel1]</group>
 				<key>beatjump_1_forward</key>
 				<description>(Beatjump 1 forward DECK A)</description>
 				<status>0x96</status>
-				<midino>0x21</midino>
+				<midino>0x20</midino>
 				<on>0x0F</on>
 				<off>0x07</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel2]</group>
-				<key>beatjump_1_forward</key>
-				<description>(Beatjump 1 forward DECK B)</description>
-				<status>0x97</status>
-				<midino>0x21</midino>
-				<on>0x0F</on>
-				<off>0x07</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel1]</group>
-				<key>beatjump_2_backward</key>
-				<description>(Beatjump 2 backward DECK A)</description>
-				<status>0x96</status>
-				<midino>0x22</midino>
-				<on>0x64</on>
-				<off>0x44</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel2]</group>
-				<key>beatjump_2_backward</key>
-				<description>(Beatjump 2 backward DECK B)</description>
-				<status>0x97</status>
-				<midino>0x22</midino>
-				<on>0x64</on>
-				<off>0x44</off>
 				<minimum>0.5</minimum>
 			</output>
 			<output>
@@ -2474,16 +2425,26 @@
 				<key>beatjump_2_forward</key>
 				<description>(Beatjump 2 forward DECK A)</description>
 				<status>0x96</status>
-				<midino>0x23</midino>
+				<midino>0x21</midino>
+				<on>0x0F</on>
+				<off>0x07</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>beatjump_4_forward</key>
+				<description>(Beatjump 4 forward DECK A)</description>
+				<status>0x96</status>
+				<midino>0x22</midino>
 				<on>0x64</on>
 				<off>0x44</off>
 				<minimum>0.5</minimum>
 			</output>
 			<output>
-				<group>[Channel2]</group>
-				<key>beatjump_2_forward</key>
-				<description>(Beatjump 2 forward DECK B)</description>
-				<status>0x97</status>
+				<group>[Channel1]</group>
+				<key>beatjump_8_forward</key>
+				<description>(Beatjump 8 forward DECK A)</description>
+				<status>0x96</status>
 				<midino>0x23</midino>
 				<on>0x64</on>
 				<off>0x44</off>
@@ -2491,10 +2452,101 @@
 			</output>
 			<output>
 				<group>[Channel1]</group>
+				<key>beatjump_1_backward</key>
+				<description>(Beatjump 1 backward DECK A)</description>
+				<status>0x96</status>
+				<midino>0x24</midino>
+				<on>0x2F</on>
+				<off>0x27</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>beatjump_2_backward</key>
+				<description>(Beatjump 2 backward DECK A)</description>
+				<status>0x96</status>
+				<midino>0x25</midino>
+				<on>0x2F</on>
+				<off>0x27</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel1]</group>
 				<key>beatjump_4_backward</key>
 				<description>(Beatjump 4 backward DECK A)</description>
 				<status>0x96</status>
+				<midino>0x26</midino>
+				<on>0x6C</on>
+				<off>0x4C</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>beatjump_8_backward</key>
+				<description>(Beatjump 8 backward DECK A)</description>
+				<status>0x96</status>
+				<midino>0x27</midino>
+				<on>0x6C</on>
+				<off>0x4C</off>
+				<minimum>0.5</minimum>
+			</output>
+			<!--Channel 2-->
+			<output>
+				<group>[Channel2]</group>
+				<key>beatjump_1_forward</key>
+				<description>(Beatjump 1 forward DECK B)</description>
+				<status>0x97</status>
+				<midino>0x20</midino>
+				<on>0x0F</on>
+				<off>0x07</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>beatjump_2_forward</key>
+				<description>(Beatjump 2 forward DECK B)</description>
+				<status>0x97</status>
+				<midino>0x21</midino>
+				<on>0x0F</on>
+				<off>0x07</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>beatjump_4_forward</key>
+				<description>(Beatjump 4 forward DECK B)</description>
+				<status>0x97</status>
+				<midino>0x22</midino>
+				<on>0x64</on>
+				<off>0x44</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>beatjump_8_forward</key>
+				<description>(Beatjump 8 forward DECK B)</description>
+				<status>0x97</status>
+				<midino>0x23</midino>
+				<on>0x64</on>
+				<off>0x44</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>beatjump_1_backward</key>
+				<description>(Beatjump 1 backward DECK B)</description>
+				<status>0x97</status>
 				<midino>0x24</midino>
+				<on>0x2F</on>
+				<off>0x27</off>
+				<minimum>0.5</minimum>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>beatjump_2_backward</key>
+				<description>(Beatjump 2 backward DECK B)</description>
+				<status>0x97</status>
+				<midino>0x25</midino>
 				<on>0x2F</on>
 				<off>0x27</off>
 				<minimum>0.5</minimum>
@@ -2504,36 +2556,6 @@
 				<key>beatjump_4_backward</key>
 				<description>(Beatjump 4 backward DECK B)</description>
 				<status>0x97</status>
-				<midino>0x24</midino>
-				<on>0x2F</on>
-				<off>0x27</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel1]</group>
-				<key>beatjump_4_forward</key>
-				<description>(Beatjump 4 forward DECK A)</description>
-				<status>0x96</status>
-				<midino>0x25</midino>
-				<on>0x2F</on>
-				<off>0x27</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel2]</group>
-				<key>beatjump_4_forward</key>
-				<description>(Beatjump 4 forward DECK B)</description>
-				<status>0x97</status>
-				<midino>0x25</midino>
-				<on>0x2F</on>
-				<off>0x27</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel1]</group>
-				<key>beatjump_8_backward</key>
-				<description>(Beatjump 8 backward DECK A)</description>
-				<status>0x96</status>
 				<midino>0x26</midino>
 				<on>0x6C</on>
 				<off>0x4C</off>
@@ -2542,27 +2564,7 @@
 			<output>
 				<group>[Channel2]</group>
 				<key>beatjump_8_backward</key>
-				<description>(Beatjump 8 backward DECK B)</description>
-				<status>0x97</status>
-				<midino>0x26</midino>
-				<on>0x6C</on>
-				<off>0x4C</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel1]</group>
-				<key>beatjump_8_forward</key>
-				<description>(Beatjump 8 forward DECK A)</description>
-				<status>0x96</status>
-				<midino>0x27</midino>
-				<on>0x6C</on>
-				<off>0x4C</off>
-				<minimum>0.5</minimum>
-			</output>
-			<output>
-				<group>[Channel2]</group>
-				<key>beatjump_8_forward</key>
-				<description>(Beatjump 8 forward Deck B)</description>
+				<description>(Beatjump 8 backward Deck B)</description>
 				<status>0x97</status>
 				<midino>0x27</midino>
 				<on>0x6C</on>
